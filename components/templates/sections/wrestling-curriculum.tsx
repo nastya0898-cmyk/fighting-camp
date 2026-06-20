@@ -101,15 +101,15 @@ export default function WrestlingCurriculum() {
               <motion.div
                 initial={false}
                 whileHover={{ backgroundColor: "rgba(255,255,255,0.02)" }}
-                className="grid lg:grid-cols-5 border-b border-white/10 last:border-b-0 group"
+                className="grid md:grid-cols-5 border-b border-white/10 last:border-b-0 group"
               >
                 {/* Number column */}
                 <div
-                  className="lg:col-span-1 p-8 lg:p-10 flex lg:flex-col items-center lg:items-start gap-4 lg:gap-0 border-b lg:border-b-0 lg:border-r border-white/10"
+                  className="md:col-span-1 p-6 md:p-10 flex md:flex-col items-center md:items-start gap-4 md:gap-0 border-b md:border-b-0 md:border-r border-white/10"
                   style={{ backgroundColor: "rgba(0,7,55,0.3)" }}
                 >
                   <div
-                    className="text-5xl lg:text-6xl font-bold leading-none"
+                    className="text-4xl md:text-6xl font-bold leading-none"
                     style={{
                       fontFamily: "var(--font-heading)",
                       color: block.color === "#FF8718" ? "rgba(255,135,24,0.3)" : "rgba(255,255,255,0.1)",
@@ -124,9 +124,9 @@ export default function WrestlingCurriculum() {
                 </div>
 
                 {/* Main content */}
-                <div className="lg:col-span-2 p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/10">
+                <div className="md:col-span-2 p-6 md:p-10 border-b md:border-b-0 md:border-r border-white/10">
                   <h3
-                    className="text-2xl lg:text-3xl font-bold uppercase text-white leading-tight mb-6 whitespace-pre-line"
+                    className="text-xl md:text-3xl font-bold uppercase text-white leading-tight mb-4 md:mb-6 break-words"
                     style={{ fontFamily: "var(--font-heading)" }}
                   >
                     {block.title}
@@ -140,7 +140,7 @@ export default function WrestlingCurriculum() {
                 </div>
 
                 {/* Checklist */}
-                <div className="lg:col-span-2 p-8 lg:p-10">
+                <div className="md:col-span-2 p-6 md:p-10">
                   <ul className="space-y-3">
                     {block.items.map((item) => (
                       <li key={item} className="flex items-start gap-3">

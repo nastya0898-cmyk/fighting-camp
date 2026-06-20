@@ -115,7 +115,7 @@ export default function WrestlingHero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold uppercase leading-none tracking-tight text-white mb-6"
+          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold uppercase leading-none tracking-tight text-white mb-6 break-words"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           Train With
@@ -129,7 +129,7 @@ export default function WrestlingHero() {
           </span>
           <br />
           <span
-            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mt-4 inline-block"
+            className="text-base sm:text-2xl md:text-3xl lg:text-4xl font-bold mt-4 inline-block break-words"
             style={{ color: "#FF8718" }}
           >
             Next wrestling camp in the Swiss mountains — August 2–7!{" "}

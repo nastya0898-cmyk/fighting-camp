@@ -102,7 +102,7 @@ export default function WrestlingCoaches() {
         </Reveal>
 
         {/* Coach cards */}
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {coaches.map((coach, index) => (
             <Reveal key={coach.id} delay={index * 0.2} direction="up">
               <motion.div
@@ -135,13 +135,13 @@ export default function WrestlingCoaches() {
                 {coach.photo && (
                   <div
                     className="relative w-full overflow-hidden"
-                    style={{ backgroundColor: "rgba(0,7,55,0.8)", aspectRatio: "1 / 1" }}
+                    style={{ backgroundColor: "rgba(0,7,55,0.8)", aspectRatio: "1 / 1", maxHeight: "420px" }}
                   >
                     <Image
                       src={coach.photo}
                       alt={`${coach.name} — Leading Coach at Elite Wrestling Camp Switzerland`}
                       fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                       priority={index === 0}
                     />
