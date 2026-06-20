@@ -29,9 +29,29 @@ export default function WrestlingContact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    await new Promise((res) => setTimeout(res, 1500));
-    setLoading(false);
-    setSubmitted(true);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "72a9478f-07fc-479f-901e-6ab27c41800d",
+          subject: `New Registration — Elite Wrestling Camp 2026 from ${form.name}`,
+          from_name: "Wrestling Camp Site",
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          country: form.country,
+          sport: form.sport,
+          message: form.message,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSubmitted(true);
+      }
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputStyle = {
