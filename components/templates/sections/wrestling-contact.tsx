@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/layout/container";
 import { Reveal } from "@/components/ui/animations/reveal";
 import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 
-const sports = ["Wrestling", "BJJ", "MMA", "Grappling", "Judo", "Submission Wrestling", "Other"];
+const sports = ["Wrestling"];
 
 export default function WrestlingContact() {
   const [form, setForm] = useState({
