@@ -18,24 +18,52 @@ const anonymousPro = Anonymous_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "Elite Wrestling Camp Switzerland 2026",
+  title: "Elite Wrestling Camp Switzerland 2026 | August 2–7 | 30 Spots Only",
   description:
-    "Train with world-class champions in Switzerland. Elite Wrestling Camp 2026 — for Wrestling, BJJ, MMA, Grappling & Combat Athletes. Only 30 spots available.",
+    "Train with world-class champions Isa Usupov & Idris Ibaev in the Swiss Alps. Elite Wrestling Camp Switzerland 2026 — August 2–7. Wrestling, BJJ, MMA, Grappling. Only 30 spots available. Register now.",
   keywords: [
-    "wrestling camp",
-    "Switzerland",
-    "BJJ",
-    "MMA",
-    "grappling",
-    "combat sports",
-    "elite training",
-    "summer camp 2026",
+    "wrestling camp Switzerland 2026",
+    "elite wrestling camp",
+    "wrestling training Switzerland",
+    "BJJ camp Switzerland",
+    "MMA camp Switzerland Alps",
+    "grappling camp Europe 2026",
+    "combat sports camp Switzerland",
+    "Isa Usupov wrestling",
+    "Idris Ibaev wrestling",
+    "summer wrestling camp 2026",
+    "wrestling camp Swiss Alps",
+    "wrestling camp August 2026",
   ],
   openGraph: {
-    title: "Elite Wrestling Camp Switzerland 2026",
+    title: "Elite Wrestling Camp Switzerland 2026 | August 2–7",
     description:
-      "Train with world-class champions in Switzerland. Only 30 spots available.",
+      "Train with world-class champions in the Swiss Alps. Only 30 spots available. Wrestling, BJJ, MMA, Grappling.",
     type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "/head-photo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Elite Wrestling Camp Switzerland 2026",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Elite Wrestling Camp Switzerland 2026",
+    description: "Train with world-class champions in the Swiss Alps. Only 30 spots.",
+    images: ["/head-photo.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
   },
 };
 

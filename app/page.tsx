@@ -1,3 +1,4 @@
+import WrestlingSchema from "@/components/templates/sections/wrestling-schema";
 import WrestlingNavbar from "@/components/templates/sections/wrestling-navbar";
 import WrestlingHero from "@/components/templates/sections/wrestling-hero";
 import WrestlingAbout from "@/components/templates/sections/wrestling-about";
@@ -17,6 +18,7 @@ import WrestlingFooter from "@/components/templates/sections/wrestling-footer";
 export default function Home() {
   return (
     <main style={{ backgroundColor: "#000737" }}>
+      <WrestlingSchema />
       <WrestlingNavbar />
       <WrestlingHero />
       <WrestlingAbout />
