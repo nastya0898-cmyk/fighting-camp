@@ -12,7 +12,7 @@ const coaches = [
     name: "Ismail Musukaev",
     title: "Leading Coach",
     initials: "IM",
-    photo: "",
+    photo: "/ismail-musukaev.jpg",
     instagram: "https://www.instagram.com/ismail_musukaev__/",
     credentials: [
       "2023 World Champion — 65 kg Freestyle Wrestling",
