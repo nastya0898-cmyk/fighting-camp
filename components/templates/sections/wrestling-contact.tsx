@@ -19,6 +19,7 @@ export default function WrestlingContact() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -29,6 +30,7 @@ export default function WrestlingContact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setError("");
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -48,7 +50,11 @@ export default function WrestlingContact() {
       const data = await res.json();
       if (data.success) {
         setSubmitted(true);
+      } else {
+        setError(data.message || "Something went wrong. Please try again.");
       }
+    } catch {
+      setError("Network error. Please check your connection and try again.");
     } finally {
       setLoading(false);
     }
@@ -392,6 +398,15 @@ export default function WrestlingContact() {
                     </>
                   )}
                 </motion.button>
+
+                {error && (
+                  <p
+                    className="text-xs text-center"
+                    style={{ color: "#ff4444", fontFamily: "var(--font-body)" }}
+                  >
+                    {error}
+                  </p>
+                )}
 
                 <p
                   className="text-xs text-white/25 text-center"
