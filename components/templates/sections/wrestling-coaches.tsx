@@ -8,20 +8,20 @@ import { Shield, Star, ExternalLink } from "lucide-react";
 
 const coaches = [
   {
-    id: "isa",
-    name: "Isa Usupov",
+    id: "ismail",
+    name: "Ismail Musukaev",
     title: "Leading Coach",
-    initials: "IU",
-    photo: "/isa-usupov.jpg",
-    instagram: "https://www.instagram.com/spartansoldier_1/",
+    initials: "IM",
+    photo: "",
+    instagram: "https://www.instagram.com/ismail_musukaev__/",
     credentials: [
-      "Multiple-time Swiss Wrestling Champion",
-      "European Grappling Champion",
-      "Swiss MMA National Team Coach",
-      "Black Belt in Judo",
-      "Black Belt in Brazilian Jiu-Jitsu",
+      "2023 World Champion — 65 kg Freestyle Wrestling",
+      "2x Olympian — Tokyo 2020 & Paris 2024",
+      "European Champion — Freestyle Wrestling",
+      "2019 World Championship Bronze Medalist",
+      "Dagestani Wrestling Tradition",
     ],
-    bio: "Isa Usupov is one of Switzerland's most decorated combat sports athletes and coaches. With an international career spanning wrestling, BJJ, Judo and MMA, he brings a unique multi-disciplinary approach that has shaped some of Europe's top competitors.",
+    bio: "Ismail Musukaev is a 2023 World Champion and two-time Olympian (Tokyo 2020, Paris 2024) competing at 65 kg freestyle wrestling. Born in Kabardino-Balkaria, Russia, he represents Hungary and broke a 44-year drought in Hungarian wrestling by winning the World title in 2023. His explosive Dagestani style and relentless offensive wrestling make him one of the most exciting coaches on the international circuit.",
     color: "#FF8718",
   },
   {
@@ -39,6 +39,23 @@ const coaches = [
       "Youth Development Expert",
     ],
     bio: "Idris Ibaev brings elite wrestling experience and a passion for athlete development. His technical expertise and hands-on coaching style make him an invaluable part of the Elite Wrestling Camp coaching staff.",
+    color: "#FF8718",
+  },
+  {
+    id: "isa",
+    name: "Isa Usupov",
+    title: "Leading Coach",
+    initials: "IU",
+    photo: "/isa-usupov.jpg",
+    instagram: "https://www.instagram.com/spartansoldier_1/",
+    credentials: [
+      "Multiple-time Swiss Wrestling Champion",
+      "European Grappling Champion",
+      "Swiss MMA National Team Coach",
+      "Black Belt in Judo",
+      "Black Belt in Brazilian Jiu-Jitsu",
+    ],
+    bio: "Isa Usupov is one of Switzerland's most decorated combat sports athletes and coaches. With an international career spanning wrestling, BJJ, Judo and MMA, he brings a unique multi-disciplinary approach that has shaped some of Europe's top competitors.",
     color: "#FF8718",
   },
 ];
@@ -85,7 +102,7 @@ export default function WrestlingCoaches() {
         </Reveal>
 
         {/* Coach cards */}
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           {coaches.map((coach, index) => (
             <Reveal key={coach.id} delay={index * 0.2} direction="up">
               <motion.div
@@ -156,7 +173,7 @@ export default function WrestlingCoaches() {
                           <circle cx="12" cy="12" r="4"/>
                           <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
                         </svg>
-                        {coach.id === "isa" ? "@spartansoldier_1" : "@ibaev160"}
+                        {coach.id === "isa" ? "@spartansoldier_1" : coach.id === "idris" ? "@ibaev160" : "@ismail_musukaev__"}
                       </a>
                     )}
                   </div>
@@ -282,7 +299,7 @@ export default function WrestlingCoaches() {
                         <circle cx="12" cy="12" r="4"/>
                         <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
                       </svg>
-                      Follow on Instagram → {coach.id === "isa" ? "@spartansoldier_1" : "@ibaev160"}
+                      Follow on Instagram → {coach.id === "isa" ? "@spartansoldier_1" : coach.id === "idris" ? "@ibaev160" : "@ismail_musukaev__"}
                     </a>
                   )}
                 </div>

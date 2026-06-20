@@ -236,7 +236,7 @@ export default function WrestlingHero() {
             className="text-xs uppercase tracking-[0.25em]"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            Leading Coaches: Isa Usupov &amp; Idris Ibaev
+            Leading Coaches: Ismail Musukaev · Idris Ibaev · Isa Usupov
           </span>
           <span className="h-px w-8 bg-white/20" />
         </motion.div>

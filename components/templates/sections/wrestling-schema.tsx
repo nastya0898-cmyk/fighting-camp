@@ -27,11 +27,11 @@ const eventSchema = {
   performer: [
     {
       "@type": "Person",
-      name: "Isa Usupov",
+      name: "Ismail Musukaev",
       jobTitle: "Leading Coach",
       description:
-        "Multiple-time Swiss Wrestling Champion, European Grappling Champion, Swiss MMA National Team Coach",
-      sameAs: "https://www.instagram.com/spartansoldier_1/",
+        "2023 World Champion 65kg Freestyle Wrestling, 2x Olympian (Tokyo 2020 & Paris 2024), European Champion",
+      sameAs: "https://www.instagram.com/ismail_musukaev__/",
     },
     {
       "@type": "Person",
@@ -39,6 +39,14 @@ const eventSchema = {
       jobTitle: "Leading Coach",
       description: "International Wrestling Experience, Elite Grappling Competitor",
       sameAs: "https://www.instagram.com/ibaev160",
+    },
+    {
+      "@type": "Person",
+      name: "Isa Usupov",
+      jobTitle: "Leading Coach",
+      description:
+        "Multiple-time Swiss Wrestling Champion, European Grappling Champion, Swiss MMA National Team Coach",
+      sameAs: "https://www.instagram.com/spartansoldier_1/",
     },
   ],
   offers: [
