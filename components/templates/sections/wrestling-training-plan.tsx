@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { Container } from "@/components/ui/layout/container";
 import { Reveal } from "@/components/ui/animations/reveal";
@@ -14,6 +15,30 @@ const planSteps = [
 ];
 
 export default function WrestlingTrainingPlan() {
+  const [activeStep, setActiveStep] = useState(0);
+  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const center = window.innerHeight / 2;
+      let closest = 0;
+      let closestDist = Infinity;
+      stepRefs.current.forEach((ref, i) => {
+        if (!ref) return;
+        const rect = ref.getBoundingClientRect();
+        const stepCenter = rect.top + rect.height / 2;
+        const dist = Math.abs(stepCenter - center);
+        if (dist < closestDist) {
+          closestDist = dist;
+          closest = i;
+        }
+      });
+      setActiveStep(closest);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <section
       className="py-24 lg:py-32 relative overflow-hidden"
@@ -142,41 +167,54 @@ export default function WrestlingTrainingPlan() {
               />
 
               <div className="space-y-2">
-                {planSteps.map((step, i) => (
+                {planSteps.map((step, i) => {
+                  const isActive = i === activeStep;
+                  return (
                   <motion.div
                     key={step.step}
+                    ref={(el) => { stepRefs.current[i] = el; }}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.1, duration: 0.5 }}
-                    className="flex items-center gap-6 p-5 relative group"
+                    animate={{
+                      backgroundColor: isActive
+                        ? "rgba(255,135,24,0.08)"
+                        : "rgba(255,255,255,0.02)",
+                    }}
+                    className="flex items-center gap-6 p-5 relative"
                     style={{
-                      backgroundColor: "rgba(255,255,255,0.02)",
-                      borderLeft: "1px solid rgba(255,255,255,0.05)",
+                      borderLeft: `2px solid ${isActive ? "#FF8718" : "rgba(255,255,255,0.05)"}`,
+                      transition: "border-color 0.4s ease, background-color 0.4s ease",
                     }}
                   >
-                    {/* Step dot */}
-                    <div
-                      className="w-12 h-12 flex-shrink-0 flex items-center justify-center text-sm font-bold z-10 transition-all duration-300 group-hover:scale-110"
+                    {/* Step box */}
+                    <motion.div
+                      animate={{
+                        backgroundColor: isActive ? "#FF8718" : "rgba(255,135,24,0.1)",
+                        scale: isActive ? 1.08 : 1,
+                      }}
+                      transition={{ duration: 0.35 }}
+                      className="w-12 h-12 flex-shrink-0 flex items-center justify-center text-sm font-bold z-10"
                       style={{
-                        backgroundColor:
-                          i === 0 ? "#FF8718" : "rgba(255,135,24,0.1)",
-                        border: `1px solid ${i === 0 ? "#FF8718" : "rgba(255,135,24,0.3)"}`,
-                        color: i === 0 ? "#000737" : "#FF8718",
+                        border: `1px solid ${isActive ? "#FF8718" : "rgba(255,135,24,0.3)"}`,
+                        color: isActive ? "#000737" : "#FF8718",
                         fontFamily: "var(--font-heading)",
                       }}
                     >
                       {step.step}
-                    </div>
+                    </motion.div>
 
                     {/* Content */}
                     <div>
-                      <div
-                        className="text-white font-bold uppercase tracking-wide text-sm"
+                      <motion.div
+                        animate={{ color: isActive ? "#ffffff" : "rgba(255,255,255,0.7)" }}
+                        transition={{ duration: 0.35 }}
+                        className="font-bold uppercase tracking-wide text-sm"
                         style={{ fontFamily: "var(--font-heading)" }}
                       >
                         {step.label}
-                      </div>
+                      </motion.div>
                       <div
                         className="text-white/40 text-xs mt-1"
                         style={{ fontFamily: "var(--font-body)" }}
@@ -184,16 +222,9 @@ export default function WrestlingTrainingPlan() {
                         {step.desc}
                       </div>
                     </div>
-
-                    {/* Hover accent */}
-                    <motion.div
-                      initial={{ scaleY: 0 }}
-                      whileHover={{ scaleY: 1 }}
-                      className="absolute left-0 top-0 bottom-0 w-0.5 origin-top"
-                      style={{ backgroundColor: "#FF8718" }}
-                    />
                   </motion.div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </Reveal>
