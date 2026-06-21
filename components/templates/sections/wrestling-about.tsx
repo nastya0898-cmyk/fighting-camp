@@ -177,7 +177,7 @@ export default function WrestlingAbout() {
           >
             {[
               { number: "30", label: "Limited Spots" },
-              { number: "2+", label: "World-Class Coaches" },
+              { number: "3+", label: "World-Class Coaches" },
               { number: "6+", label: "Combat Sports" },
               { number: "1", label: "Epic Location" },
             ].map((stat, i) => (

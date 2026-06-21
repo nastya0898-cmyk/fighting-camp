@@ -43,7 +43,7 @@ function CountdownUnit({ value, label }: { value: number; label: string }) {
         className="relative"
       >
         <div
-          className="w-20 sm:w-28 h-20 sm:h-28 flex items-center justify-center border text-4xl sm:text-5xl font-bold"
+          className="w-16 sm:w-28 h-16 sm:h-28 flex items-center justify-center border text-2xl sm:text-5xl font-bold"
           style={{
             borderColor: "rgba(255,135,24,0.3)",
             backgroundColor: "rgba(255,135,24,0.06)",
@@ -152,24 +152,24 @@ export default function WrestlingDates() {
                 >
                   Estimated Countdown to Camp Start
                 </p>
-                <div className="flex items-center justify-center gap-4 sm:gap-8">
+                <div className="flex items-center justify-center gap-1 sm:gap-8">
                   <CountdownUnit value={days} label="Days" />
                   <span
-                    className="text-4xl font-bold text-white/30 mb-6"
+                    className="text-xl sm:text-4xl font-bold text-white/30 mb-6"
                     style={{ fontFamily: "var(--font-heading)" }}
                   >
                     :
                   </span>
                   <CountdownUnit value={hours} label="Hours" />
                   <span
-                    className="text-4xl font-bold text-white/30 mb-6"
+                    className="text-xl sm:text-4xl font-bold text-white/30 mb-6"
                     style={{ fontFamily: "var(--font-heading)" }}
                   >
                     :
                   </span>
                   <CountdownUnit value={minutes} label="Minutes" />
                   <span
-                    className="text-4xl font-bold text-white/30 mb-6"
+                    className="text-xl sm:text-4xl font-bold text-white/30 mb-6"
                     style={{ fontFamily: "var(--font-heading)" }}
                   >
                     :

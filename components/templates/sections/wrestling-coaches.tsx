@@ -51,7 +51,7 @@ const coaches = [
     credentials: [
       "Multiple-time Swiss Wrestling Champion",
       "European Grappling Champion",
-      "Swiss MMA National Team Coach",
+      "Vice President — Swiss MMA National Team",
       "Black Belt in Judo",
       "Black Belt in Brazilian Jiu-Jitsu",
     ],

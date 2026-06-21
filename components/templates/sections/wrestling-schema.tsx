@@ -45,7 +45,7 @@ const eventSchema = {
       name: "Isa Usupov",
       jobTitle: "Leading Coach",
       description:
-        "Multiple-time Swiss Wrestling Champion, European Grappling Champion, Swiss MMA National Team Coach",
+        "Multiple-time Swiss Wrestling Champion, European Grappling Champion, Vice President of Swiss MMA National Team",
       sameAs: "https://www.instagram.com/spartansoldier_1/",
     },
   ],
