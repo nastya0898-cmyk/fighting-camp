@@ -32,13 +32,13 @@ const coaches = [
     photo: "/idris-ibaev.jpg",
     instagram: "https://www.instagram.com/ibaev160?igsh=ZHIyb2sxd3g4b3g2",
     credentials: [
-      "International Wrestling Experience",
+      "2021 World Champion — Greco-Roman Wrestling 72 kg",
+      "German National Champion",
       "Elite Grappling Competitor",
       "Strength & Conditioning Specialist",
       "Technical Wrestling Coach",
-      "Youth Development Expert",
     ],
-    bio: "Idris Ibaev brings elite wrestling experience and a passion for athlete development. His technical expertise and hands-on coaching style make him an invaluable part of the Elite Wrestling Camp coaching staff.",
+    bio: "Idris Ibaev is a 2021 World Champion in Greco-Roman wrestling at 72 kg and German National Champion. His elite international pedigree and hands-on technical coaching style make him one of the most accomplished coaches at the Elite Wrestling Camp Switzerland 2026.",
     color: "#FF8718",
   },
   {

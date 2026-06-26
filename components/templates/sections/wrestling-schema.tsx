@@ -37,7 +37,7 @@ const eventSchema = {
       "@type": "Person",
       name: "Idris Ibaev",
       jobTitle: "Leading Coach",
-      description: "International Wrestling Experience, Elite Grappling Competitor",
+      description: "2021 World Champion Greco-Roman Wrestling 72 kg, German National Champion",
       sameAs: "https://www.instagram.com/ibaev160",
     },
     {
