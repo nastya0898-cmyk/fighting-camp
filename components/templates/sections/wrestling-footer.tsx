@@ -272,12 +272,26 @@ export default function WrestlingFooter() {
         >
           <Container>
             <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <p
-                className="text-xs text-white/50"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                © 2026 Elite Wrestling Camp Switzerland. All rights reserved.
-              </p>
+              <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-3">
+                <p
+                  className="text-xs text-white/50"
+                  style={{ fontFamily: "var(--font-body)" }}
+                >
+                  © 2026 Elite Wrestling Camp Switzerland. All rights reserved.
+                </p>
+                <span className="hidden sm:inline text-white/20 text-xs">·</span>
+                <p className="text-xs" style={{ fontFamily: "var(--font-body)" }}>
+                  <span className="text-white/30">Website created by </span>
+                  <a
+                    href="https://boldlinesmm.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/50 hover:text-white transition-colors duration-200"
+                  >
+                    boldlinesmm.com
+                  </a>
+                </p>
+              </div>
 
               <div className="flex items-center gap-6">
                 <button
