@@ -18,9 +18,9 @@ const anonymousPro = Anonymous_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "Elite Wrestling Camp Switzerland 2026 | August 2–7 | 30 Spots Only",
+  title: "High Performance Wrestling Camp Switzerland 2026 | August 2–7 | 30 Spots Only",
   description:
-    "Train with world-class champions Isa Usupov & Idris Ibaev in the Swiss Alps. Elite Wrestling Camp Switzerland 2026 — August 2–7. Wrestling, BJJ, MMA, Grappling. Only 30 spots available. Register now.",
+    "Train with world-class champions Isa Usupov & Idris Ibaev in the Swiss Alps. High Performance Wrestling Camp Switzerland 2026 — August 2–7. Wrestling, BJJ, MMA, Grappling. Only 30 spots available. Register now.",
   keywords: [
     "wrestling camp Switzerland 2026",
     "elite wrestling camp",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     "wrestling camp August 2026",
   ],
   openGraph: {
-    title: "Elite Wrestling Camp Switzerland 2026 | August 2–7",
+    title: "High Performance Wrestling Camp Switzerland 2026 | August 2–7",
     description:
       "Train with world-class champions in the Swiss Alps. Only 30 spots available. Wrestling, BJJ, MMA, Grappling.",
     type: "website",
@@ -46,13 +46,13 @@ export const metadata: Metadata = {
         url: "/head-photo.jpg",
         width: 1200,
         height: 630,
-        alt: "Elite Wrestling Camp Switzerland 2026",
+        alt: "High Performance Wrestling Camp Switzerland 2026",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elite Wrestling Camp Switzerland 2026",
+    title: "High Performance Wrestling Camp Switzerland 2026",
     description: "Train with world-class champions in the Swiss Alps. Only 30 spots.",
     images: ["/head-photo.jpg"],
   },

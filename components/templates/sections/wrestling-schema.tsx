@@ -1,7 +1,7 @@
 const eventSchema = {
   "@context": "https://schema.org",
   "@type": "SportsEvent",
-  name: "Elite Wrestling Camp Switzerland 2026",
+  name: "High Performance Wrestling Camp Switzerland 2026",
   description:
     "Elite wrestling training camp in the Swiss mountains. Train with world-class champions Isa Usupov & Idris Ibaev. Wrestling, BJJ, MMA, Grappling. Only 30 spots available.",
   startDate: "2026-08-02",
@@ -20,7 +20,7 @@ const eventSchema = {
   },
   organizer: {
     "@type": "Organization",
-    name: "Elite Wrestling Camp Switzerland",
+    name: "High Performance Wrestling Camp Switzerland",
     email: "onemoreroundathletics@gmail.com",
     telephone: "+41779793535",
   },
@@ -80,7 +80,7 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Who can join the Elite Wrestling Camp?",
+      name: "Who can join the High Performance Wrestling Camp?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "The camp is open to athletes of all levels — from complete beginners to advanced international competitors. Whether you wrestle, practice BJJ, MMA, Judo, Grappling or just want to start your combat sports journey, you are welcome. Age: 14+ (under 18 requires parental consent).",
@@ -148,7 +148,7 @@ const faqSchema = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "SportsOrganization",
-  name: "Elite Wrestling Camp Switzerland",
+  name: "High Performance Wrestling Camp Switzerland",
   sport: "Wrestling",
   email: "onemoreroundathletics@gmail.com",
   telephone: "+41779793535",

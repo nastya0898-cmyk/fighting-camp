@@ -5,9 +5,9 @@ import WrestlingFaq from "@/components/templates/sections/wrestling-faq";
 import WrestlingFooter from "@/components/templates/sections/wrestling-footer";
 
 export const metadata: Metadata = {
-  title: "FAQ — Frequently Asked Questions | Elite Wrestling Camp Switzerland 2026",
+  title: "FAQ — Frequently Asked Questions | High Performance Wrestling Camp Switzerland 2026",
   description:
-    "Answers to all your questions about Elite Wrestling Camp Switzerland 2026: who can join, what to bring, daily schedule, accommodation, pricing and how to register. All skill levels welcome, age 14+.",
+    "Answers to all your questions about High Performance Wrestling Camp Switzerland 2026: who can join, what to bring, daily schedule, accommodation, pricing and how to register. All skill levels welcome, age 14+.",
   keywords: [
     "wrestling camp FAQ Switzerland",
     "wrestling camp questions 2026",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "wrestling camp registration how to",
   ],
   openGraph: {
-    title: "FAQ — Elite Wrestling Camp Switzerland 2026",
+    title: "FAQ — High Performance Wrestling Camp Switzerland 2026",
     description:
       "Everything you need to know before registering. All skill levels welcome, age 14+. Only 30 spots available.",
     type: "website",

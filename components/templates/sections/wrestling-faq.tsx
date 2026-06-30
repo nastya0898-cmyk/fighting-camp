@@ -8,7 +8,7 @@ import { Reveal } from "@/components/ui/animations/reveal";
 
 const faqs = [
   {
-    question: "Who can join the Elite Wrestling Camp?",
+    question: "Who can join the High Performance Wrestling Camp?",
     answer:
       "The camp is open to athletes of all levels — from complete beginners to advanced international competitors. Whether you wrestle, practice BJJ, MMA, Judo, Grappling or just want to start your combat sports journey, you are welcome. Age: 14+ (under 18 requires parental consent).",
   },

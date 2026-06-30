@@ -101,7 +101,7 @@ export default function WrestlingTrainingPlan() {
                 className="text-white/50 text-lg leading-relaxed mb-8"
                 style={{ fontFamily: "var(--font-body)" }}
               >
-                Every athlete at Elite Wrestling Camp Switzerland receives an individual training
+                Every athlete at High Performance Wrestling Camp Switzerland receives an individual training
                 plan — created personally by the coaching staff based on your current level,
                 goals and experience.
               </p>

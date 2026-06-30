@@ -37,7 +37,7 @@ export default function WrestlingContact() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: "72a9478f-07fc-479f-901e-6ab27c41800d",
-          subject: `New Registration — Elite Wrestling Camp 2026 from ${form.name}`,
+          subject: `New Registration — High Performance Wrestling Camp 2026 from ${form.name}`,
           from_name: "Wrestling Camp Site",
           name: form.name,
           email: form.email,

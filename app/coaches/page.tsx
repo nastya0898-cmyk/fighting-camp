@@ -5,9 +5,9 @@ import WrestlingCoaches from "@/components/templates/sections/wrestling-coaches"
 import WrestlingFooter from "@/components/templates/sections/wrestling-footer";
 
 export const metadata: Metadata = {
-  title: "Coaches — Isa Usupov & Idris Ibaev | Elite Wrestling Camp Switzerland 2026",
+  title: "Coaches — Isa Usupov & Idris Ibaev | High Performance Wrestling Camp Switzerland 2026",
   description:
-    "Meet your coaches: Isa Usupov (Swiss Wrestling Champion, Swiss MMA National Team Coach) and Idris Ibaev. Train directly with world-class champions at Elite Wrestling Camp Switzerland 2026.",
+    "Meet your coaches: Isa Usupov (Swiss Wrestling Champion, Swiss MMA National Team Coach) and Idris Ibaev. Train directly with world-class champions at High Performance Wrestling Camp Switzerland 2026.",
   keywords: [
     "Isa Usupov wrestling coach",
     "Idris Ibaev wrestling",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Meet the Coaches — Isa Usupov & Idris Ibaev",
     description:
-      "Train with Swiss Wrestling Champion Isa Usupov and elite wrestler Idris Ibaev at Elite Wrestling Camp Switzerland 2026.",
+      "Train with Swiss Wrestling Champion Isa Usupov and elite wrestler Idris Ibaev at High Performance Wrestling Camp Switzerland 2026.",
     type: "website",
     images: [{ url: "/isa-usupov.jpg", width: 1200, height: 630, alt: "Isa Usupov — Leading Coach" }],
   },

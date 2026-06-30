@@ -65,7 +65,7 @@ export default function WrestlingFooter() {
                   className="text-white/40 text-sm"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
-                  30 spots available · Summer 2026 · Elite Wrestling Camp
+                  30 spots available · Summer 2026 · High Performance Wrestling Camp
                 </p>
               </div>
               <motion.button
@@ -277,7 +277,7 @@ export default function WrestlingFooter() {
                   className="text-xs text-white/50"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
-                  © 2026 Elite Wrestling Camp Switzerland. All rights reserved.
+                  © 2026 High Performance Wrestling Camp Switzerland. All rights reserved.
                 </p>
                 <span className="hidden sm:inline text-white/20 text-xs">·</span>
                 <p className="text-xs" style={{ fontFamily: "var(--font-body)" }}>

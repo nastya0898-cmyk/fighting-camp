@@ -7,7 +7,7 @@ import WrestlingSpecialties from "@/components/templates/sections/wrestling-spec
 import WrestlingFooter from "@/components/templates/sections/wrestling-footer";
 
 export const metadata: Metadata = {
-  title: "Training Program — Schedule & Curriculum | Elite Wrestling Camp Switzerland 2026",
+  title: "Training Program — Schedule & Curriculum | High Performance Wrestling Camp Switzerland 2026",
   description:
     "Full 6-day wrestling camp program: morning drilling, strength & conditioning, live sparring, technique clinics. Wrestling, BJJ, MMA and Grappling sessions in the Swiss Alps. August 2–7, 2026.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "wrestling conditioning program Swiss Alps",
   ],
   openGraph: {
-    title: "Training Program — Elite Wrestling Camp Switzerland 2026",
+    title: "Training Program — High Performance Wrestling Camp Switzerland 2026",
     description:
       "6-day intensive wrestling program: drilling, sparring, conditioning and technique clinics in the Swiss Alps. August 2–7, 2026.",
     type: "website",

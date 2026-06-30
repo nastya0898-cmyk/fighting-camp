@@ -145,7 +145,7 @@ export default function WrestlingHero() {
           className="text-lg sm:text-xl text-white/60 mb-4 max-w-2xl mx-auto"
           style={{ fontFamily: "var(--font-body)" }}
         >
-          Elite Wrestling Camp Switzerland 2026
+          High Performance Wrestling Camp Switzerland 2026
         </motion.p>
 
         <motion.p

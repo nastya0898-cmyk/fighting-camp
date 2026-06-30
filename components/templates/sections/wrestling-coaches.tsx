@@ -38,7 +38,7 @@ const coaches = [
       "Strength & Conditioning Specialist",
       "Technical Wrestling Coach",
     ],
-    bio: "Idris Ibaev is a 2021 World Champion in Greco-Roman wrestling at 72 kg and German National Champion. His elite international pedigree and hands-on technical coaching style make him one of the most accomplished coaches at the Elite Wrestling Camp Switzerland 2026.",
+    bio: "Idris Ibaev is a 2021 World Champion in Greco-Roman wrestling at 72 kg and German National Champion. His elite international pedigree and hands-on technical coaching style make him one of the most accomplished coaches at the High Performance Wrestling Camp Switzerland 2026.",
     color: "#FF8718",
   },
   {
@@ -139,7 +139,7 @@ export default function WrestlingCoaches() {
                   >
                     <Image
                       src={coach.photo}
-                      alt={`${coach.name} — Leading Coach at Elite Wrestling Camp Switzerland`}
+                      alt={`${coach.name} — Leading Coach at High Performance Wrestling Camp Switzerland`}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
