@@ -102,7 +102,7 @@ export default function WrestlingFooter() {
                     className="text-white font-bold text-sm uppercase tracking-widest leading-none"
                     style={{ fontFamily: "var(--font-heading)" }}
                   >
-                    Elite Wrestling
+                    High Performance Wrestling
                   </div>
                   <div
                     className="text-xs uppercase tracking-widest"

@@ -14,7 +14,7 @@ const benefits = [
   },
   {
     icon: Target,
-    title: "Elite Methodology",
+    title: "High Performance Methodology",
     description:
       "A proven athlete development system used at the highest levels of international competition.",
   },
@@ -62,7 +62,7 @@ export default function WrestlingAbout() {
                 style={{ fontFamily: "var(--font-heading)" }}
               >
                 Why{" "}
-                <span style={{ color: "#FF8718" }}>Elite</span>
+                <span style={{ color: "#FF8718" }}>High Performance</span>
                 <br />
                 Wrestling Camp?
               </h2>

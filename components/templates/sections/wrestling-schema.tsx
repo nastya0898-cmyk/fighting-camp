@@ -3,7 +3,7 @@ const eventSchema = {
   "@type": "SportsEvent",
   name: "High Performance Wrestling Camp Switzerland 2026",
   description:
-    "Elite wrestling training camp in the Swiss mountains. Train with world-class champions Isa Usupov & Idris Ibaev. Wrestling, BJJ, MMA, Grappling. Only 30 spots available.",
+    "High Performance Wrestling Camp in the Swiss mountains. Train with world-class champions Isa Usupov & Idris Ibaev. Wrestling, BJJ, MMA, Grappling. Only 30 spots available.",
   startDate: "2026-08-02",
   endDate: "2026-08-07",
   eventStatus: "https://schema.org/EventScheduled",
