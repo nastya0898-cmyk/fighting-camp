@@ -36,7 +36,7 @@ export default function WrestlingContact() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: "72a9478f-07fc-479f-901e-6ab27c41800d",
+          access_key: "a585a254-708d-446b-8052-a6eb8ebe7cea",
           subject: `New Registration — Apex Wrestling Camp 2026 from ${form.name}`,
           from_name: "Wrestling Camp Site",
           name: form.name,
