@@ -4,8 +4,8 @@ const eventSchema = {
   name: "Apex Wrestling Camp Switzerland 2026",
   description:
     "Apex Wrestling Camp in the Swiss mountains. Train with world-class champions Isa Usupov & Idris Ibaev. Wrestling, BJJ, MMA, Grappling. Only 30 spots available.",
-  startDate: "2026-08-02",
-  endDate: "2026-08-07",
+  startDate: "2026-09-06",
+  endDate: "2026-09-11",
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   sport: "Wrestling",

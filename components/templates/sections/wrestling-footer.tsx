@@ -246,7 +246,7 @@ export default function WrestlingFooter() {
                   className="text-xs text-white/40"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
-                  Last week of July or first week of August
+                  6–11 September 2026
                 </div>
               </div>
             </div>

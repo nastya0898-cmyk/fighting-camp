@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "wrestling camp apply Switzerland",
     "combat sports camp sign up 2026",
     "wrestling camp contact Switzerland",
-    "wrestling camp August 2026 register",
+    "wrestling camp September 2026 register",
   ],
   openGraph: {
     title: "Register — Apex Wrestling Camp Switzerland 2026",

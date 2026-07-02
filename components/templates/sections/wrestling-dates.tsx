@@ -31,7 +31,7 @@ function useCountdown(targetDate: Date) {
   return timeLeft;
 }
 
-const TARGET_DATE = new Date("2026-07-25T08:00:00");
+const TARGET_DATE = new Date("2026-09-06T08:00:00");
 
 function CountdownUnit({ value, label }: { value: number; label: string }) {
   return (
@@ -123,7 +123,7 @@ export default function WrestlingDates() {
                 className="text-xl text-white/60 mb-4"
                 style={{ fontFamily: "var(--font-body)" }}
               >
-                Last Week of July or First Week of August 2026
+                6–11 September 2026
               </p>
             </Reveal>
 
@@ -189,7 +189,7 @@ export default function WrestlingDates() {
                   {
                     icon: Calendar,
                     label: "When",
-                    value: "Last Week of July / First Week of August 2026",
+                    value: "6–11 September 2026",
                   },
                   {
                     icon: Clock,

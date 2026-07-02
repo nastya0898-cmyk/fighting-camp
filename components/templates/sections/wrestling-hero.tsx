@@ -132,7 +132,7 @@ export default function WrestlingHero() {
             className="text-base sm:text-2xl md:text-3xl lg:text-4xl font-bold mt-4 inline-block break-words"
             style={{ color: "#FF8718" }}
           >
-            Next wrestling camp in the Swiss mountains — August 2–7!{" "}
+            Next wrestling camp in the Swiss mountains — September 6–11!{" "}
             <span className="text-white">30 spots only!</span>
           </span>
         </motion.h1>

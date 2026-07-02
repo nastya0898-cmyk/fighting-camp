@@ -18,9 +18,9 @@ const anonymousPro = Anonymous_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "Apex Wrestling Camp Switzerland 2026 | August 2–7 | 30 Spots Only",
+  title: "Apex Wrestling Camp Switzerland 2026 | September 6–11 | 30 Spots Only",
   description:
-    "Train with world-class champions Isa Usupov & Idris Ibaev in the Swiss Alps. Apex Wrestling Camp Switzerland 2026 — August 2–7. Wrestling, BJJ, MMA, Grappling. Only 30 spots available. Register now.",
+    "Train with world-class champions Isa Usupov & Idris Ibaev in the Swiss Alps. Apex Wrestling Camp Switzerland 2026 — September 6–11. Wrestling, BJJ, MMA, Grappling. Only 30 spots available. Register now.",
   keywords: [
     "wrestling camp Switzerland 2026",
     "elite wrestling camp",
@@ -33,10 +33,10 @@ export const metadata: Metadata = {
     "Idris Ibaev wrestling",
     "summer wrestling camp 2026",
     "wrestling camp Swiss Alps",
-    "wrestling camp August 2026",
+    "wrestling camp September 2026",
   ],
   openGraph: {
-    title: "Apex Wrestling Camp Switzerland 2026 | August 2–7",
+    title: "Apex Wrestling Camp Switzerland 2026 | September 6–11",
     description:
       "Train with world-class champions in the Swiss Alps. Only 30 spots available. Wrestling, BJJ, MMA, Grappling.",
     type: "website",

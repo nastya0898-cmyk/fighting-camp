@@ -9,7 +9,7 @@ import WrestlingFooter from "@/components/templates/sections/wrestling-footer";
 export const metadata: Metadata = {
   title: "Training Program — Schedule & Curriculum | Apex Wrestling Camp Switzerland 2026",
   description:
-    "Full 6-day wrestling camp program: morning drilling, strength & conditioning, live sparring, technique clinics. Wrestling, BJJ, MMA and Grappling sessions in the Swiss Alps. August 2–7, 2026.",
+    "Full 6-day wrestling camp program: morning drilling, strength & conditioning, live sparring, technique clinics. Wrestling, BJJ, MMA and Grappling sessions in the Swiss Alps. September 6–11, 2026.",
   keywords: [
     "wrestling camp program Switzerland",
     "wrestling training schedule 2026",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Training Program — Apex Wrestling Camp Switzerland 2026",
     description:
-      "6-day intensive wrestling program: drilling, sparring, conditioning and technique clinics in the Swiss Alps. August 2–7, 2026.",
+      "6-day intensive wrestling program: drilling, sparring, conditioning and technique clinics in the Swiss Alps. September 6–11, 2026.",
     type: "website",
     images: [{ url: "/wrestling-2.jpg", width: 1200, height: 630, alt: "Wrestling Training Program" }],
   },
