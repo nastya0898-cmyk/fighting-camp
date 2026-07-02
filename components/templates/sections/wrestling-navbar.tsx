@@ -54,9 +54,10 @@ export default function WrestlingNavbar() {
             <Image
               src="/logo.png"
               alt="Apex Wrestling Camp"
-              width={120}
-              height={48}
+              width={100}
+              height={36}
               className="object-contain"
+              style={{ maxHeight: "36px", width: "auto" }}
               priority
             />
           </motion.a>
