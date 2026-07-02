@@ -65,7 +65,7 @@ export default function WrestlingFooter() {
                   className="text-white/40 text-sm"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
-                  30 spots available · Summer 2026 · High Performance Wrestling Camp
+                  30 spots available · Summer 2026 · Apex Wrestling Camp
                 </p>
               </div>
               <motion.button
@@ -102,7 +102,7 @@ export default function WrestlingFooter() {
                     className="text-white font-bold text-sm uppercase tracking-widest leading-none"
                     style={{ fontFamily: "var(--font-heading)" }}
                   >
-                    High Performance Wrestling
+                    Apex Wrestling
                   </div>
                   <div
                     className="text-xs uppercase tracking-widest"
@@ -202,11 +202,11 @@ export default function WrestlingFooter() {
                     Email
                   </div>
                   <a
-                    href="mailto:onemoreroundathletics@gmail.com"
+                    href="mailto:infowrestlingcamps@gmail.com"
                     className="text-sm text-white/50 hover:text-white transition-colors"
                     style={{ fontFamily: "var(--font-body)" }}
                   >
-                    onemoreroundathletics@gmail.com
+                    infowrestlingcamps@gmail.com
                   </a>
                 </div>
                 <div>
@@ -277,7 +277,7 @@ export default function WrestlingFooter() {
                   className="text-xs text-white/50"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
-                  © 2026 High Performance Wrestling Camp Switzerland. All rights reserved.
+                  © 2026 Apex Wrestling Camp Switzerland. All rights reserved.
                 </p>
                 <span className="hidden sm:inline text-white/20 text-xs">·</span>
                 <p className="text-xs" style={{ fontFamily: "var(--font-body)" }}>

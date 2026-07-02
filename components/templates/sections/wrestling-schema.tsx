@@ -1,9 +1,9 @@
 const eventSchema = {
   "@context": "https://schema.org",
   "@type": "SportsEvent",
-  name: "High Performance Wrestling Camp Switzerland 2026",
+  name: "Apex Wrestling Camp Switzerland 2026",
   description:
-    "High Performance Wrestling Camp in the Swiss mountains. Train with world-class champions Isa Usupov & Idris Ibaev. Wrestling, BJJ, MMA, Grappling. Only 30 spots available.",
+    "Apex Wrestling Camp in the Swiss mountains. Train with world-class champions Isa Usupov & Idris Ibaev. Wrestling, BJJ, MMA, Grappling. Only 30 spots available.",
   startDate: "2026-08-02",
   endDate: "2026-08-07",
   eventStatus: "https://schema.org/EventScheduled",
@@ -20,8 +20,8 @@ const eventSchema = {
   },
   organizer: {
     "@type": "Organization",
-    name: "High Performance Wrestling Camp Switzerland",
-    email: "onemoreroundathletics@gmail.com",
+    name: "Apex Wrestling Camp Switzerland",
+    email: "infowrestlingcamps@gmail.com",
     telephone: "+41779793535",
   },
   performer: [
@@ -80,7 +80,7 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Who can join the High Performance Wrestling Camp?",
+      name: "Who can join the Apex Wrestling Camp?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "The camp is open to athletes of all levels — from complete beginners to advanced international competitors. Whether you wrestle, practice BJJ, MMA, Judo, Grappling or just want to start your combat sports journey, you are welcome. Age: 14+ (under 18 requires parental consent).",
@@ -131,7 +131,7 @@ const faqSchema = {
       name: "How do I secure my spot?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Fill in the contact form on this page or reach out via email onemoreroundathletics@gmail.com or phone +41 77 979 35 35. Spots are confirmed on a first-come, first-served basis.",
+        text: "Fill in the contact form on this page or reach out via email infowrestlingcamps@gmail.com or phone +41 77 979 35 35. Spots are confirmed on a first-come, first-served basis.",
       },
     },
     {
@@ -148,9 +148,9 @@ const faqSchema = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "SportsOrganization",
-  name: "High Performance Wrestling Camp Switzerland",
+  name: "Apex Wrestling Camp Switzerland",
   sport: "Wrestling",
-  email: "onemoreroundathletics@gmail.com",
+  email: "infowrestlingcamps@gmail.com",
   telephone: "+41779793535",
   url: "https://elitewrestlingcamp.ch",
   address: {

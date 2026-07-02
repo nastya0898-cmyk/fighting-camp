@@ -83,7 +83,7 @@ export default function WrestlingAbout() {
                 className="text-white/60 leading-relaxed mb-6"
                 style={{ fontFamily: "var(--font-body)" }}
               >
-                The High Performance Wrestling Camp Switzerland is a unique opportunity to train under the
+                The Apex Wrestling Camp Switzerland is a unique opportunity to train under the
                 guidance of world-class coaches in one of the most beautiful environments in
                 Europe. Designed for athletes of all levels — from beginners to advanced
                 competitors — this intensive training camp combines elite wrestling instruction,

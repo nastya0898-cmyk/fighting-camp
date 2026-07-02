@@ -5,9 +5,9 @@ import WrestlingContact from "@/components/templates/sections/wrestling-contact"
 import WrestlingFooter from "@/components/templates/sections/wrestling-footer";
 
 export const metadata: Metadata = {
-  title: "Register Now — Reserve Your Spot | High Performance Wrestling Camp Switzerland 2026",
+  title: "Register Now — Reserve Your Spot | Apex Wrestling Camp Switzerland 2026",
   description:
-    "Reserve your spot at High Performance Wrestling Camp Switzerland 2026. Only 30 places available. Fill in the form and our team will contact you within 24 hours. Phone: +41 77 979 35 35.",
+    "Reserve your spot at Apex Wrestling Camp Switzerland 2026. Only 30 places available. Fill in the form and our team will contact you within 24 hours. Phone: +41 77 979 35 35.",
   keywords: [
     "wrestling camp registration Switzerland 2026",
     "reserve wrestling camp spot",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "wrestling camp August 2026 register",
   ],
   openGraph: {
-    title: "Register — High Performance Wrestling Camp Switzerland 2026",
+    title: "Register — Apex Wrestling Camp Switzerland 2026",
     description:
       "Only 30 spots available. Reserve yours now — we respond within 24 hours. Phone: +41 77 979 35 35.",
     type: "website",

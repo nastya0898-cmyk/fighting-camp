@@ -61,7 +61,7 @@ export default function WrestlingNavbar() {
                 className="text-white font-bold text-sm uppercase tracking-widest leading-none"
                 style={{ fontFamily: "var(--font-heading)" }}
               >
-                High Performance Wrestling
+                Apex Wrestling
               </div>
               <div className="text-xs uppercase tracking-widest" style={{ color: "#FF8718" }}>
                 Camp Switzerland 2026

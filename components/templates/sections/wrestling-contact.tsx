@@ -37,7 +37,7 @@ export default function WrestlingContact() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: "72a9478f-07fc-479f-901e-6ab27c41800d",
-          subject: `New Registration — High Performance Wrestling Camp 2026 from ${form.name}`,
+          subject: `New Registration — Apex Wrestling Camp 2026 from ${form.name}`,
           from_name: "Wrestling Camp Site",
           name: form.name,
           email: form.email,
@@ -135,8 +135,8 @@ export default function WrestlingContact() {
                   {
                     icon: Mail,
                     label: "Email",
-                    value: "onemoreroundathletics@gmail.com",
-                    href: "mailto:onemoreroundathletics@gmail.com",
+                    value: "infowrestlingcamps@gmail.com",
+                    href: "mailto:infowrestlingcamps@gmail.com",
                   },
                   {
                     icon: MapPin,
