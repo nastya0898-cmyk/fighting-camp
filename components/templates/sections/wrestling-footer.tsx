@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Image from "next/image";
 import { Container } from "@/components/ui/layout/container";
 import { Share2, PlayCircle, Users, MessageSquare, ArrowUp } from "lucide-react";
 
@@ -90,27 +91,14 @@ export default function WrestlingFooter() {
           <div className="py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* Brand column */}
             <div className="lg:col-span-1">
-              <div className="flex items-center gap-3 mb-6">
-                <div
-                  className="w-10 h-10 flex items-center justify-center font-bold text-sm"
-                  style={{ backgroundColor: "#FF8718", color: "#000737", fontFamily: "var(--font-heading)" }}
-                >
-                  EWC
-                </div>
-                <div>
-                  <div
-                    className="text-white font-bold text-sm uppercase tracking-widest leading-none"
-                    style={{ fontFamily: "var(--font-heading)" }}
-                  >
-                    Apex Wrestling
-                  </div>
-                  <div
-                    className="text-xs uppercase tracking-widest"
-                    style={{ color: "#FF8718", fontFamily: "var(--font-heading)" }}
-                  >
-                    Camp Switzerland 2026
-                  </div>
-                </div>
+              <div className="mb-6">
+                <Image
+                  src="/logo.png"
+                  alt="Apex Wrestling Camp"
+                  width={140}
+                  height={56}
+                  className="object-contain"
+                />
               </div>
               <p
                 className="text-white/60 text-sm leading-relaxed mb-6"

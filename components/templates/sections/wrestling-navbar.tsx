@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { Container } from "@/components/ui/layout/container";
 
 const navigation = [
@@ -50,23 +51,14 @@ export default function WrestlingNavbar() {
             className="flex items-center gap-3 group"
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
           >
-            <div
-              className="flex items-center justify-center w-10 h-10 rounded-none font-bold text-sm"
-              style={{ backgroundColor: "#FF8718", color: "#000737" }}
-            >
-              EWC
-            </div>
-            <div className="hidden sm:block">
-              <div
-                className="text-white font-bold text-sm uppercase tracking-widest leading-none"
-                style={{ fontFamily: "var(--font-heading)" }}
-              >
-                Apex Wrestling
-              </div>
-              <div className="text-xs uppercase tracking-widest" style={{ color: "#FF8718" }}>
-                Camp Switzerland 2026
-              </div>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="Apex Wrestling Camp"
+              width={120}
+              height={48}
+              className="object-contain"
+              priority
+            />
           </motion.a>
 
           {/* Desktop nav */}
