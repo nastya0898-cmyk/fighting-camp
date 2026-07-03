@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://elitewrestlingcamp.ch
+Host: https://fighting-camp.com
 
 # Sitemaps
-Sitemap: https://elitewrestlingcamp.ch/sitemap.xml
+Sitemap: https://fighting-camp.com/sitemap.xml

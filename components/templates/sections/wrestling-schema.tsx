@@ -57,7 +57,7 @@ const eventSchema = {
       priceCurrency: "EUR",
       availability: "https://schema.org/LimitedAvailability",
       validFrom: "2026-01-01",
-      url: "https://elitewrestlingcamp.ch/#contact",
+      url: "https://fighting-camp.com/#contact",
     },
     {
       "@type": "Offer",
@@ -66,12 +66,12 @@ const eventSchema = {
       priceCurrency: "EUR",
       availability: "https://schema.org/LimitedAvailability",
       validFrom: "2026-01-01",
-      url: "https://elitewrestlingcamp.ch/#contact",
+      url: "https://fighting-camp.com/#contact",
     },
   ],
   maximumAttendeeCapacity: 30,
-  image: "https://elitewrestlingcamp.ch/head-photo.jpg",
-  url: "https://elitewrestlingcamp.ch",
+  image: "https://fighting-camp.com/head-photo.jpg",
+  url: "https://fighting-camp.com",
 };
 
 const faqSchema = {
@@ -152,7 +152,7 @@ const organizationSchema = {
   sport: "Wrestling",
   email: "infowrestlingcamps@gmail.com",
   telephone: "+41779793535",
-  url: "https://elitewrestlingcamp.ch",
+  url: "https://fighting-camp.com",
   address: {
     "@type": "PostalAddress",
     addressCountry: "CH",

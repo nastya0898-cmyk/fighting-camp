@@ -18,12 +18,12 @@ const anonymousPro = Anonymous_Pro({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://elitewrestlingcamp.ch"),
+  metadataBase: new URL("https://fighting-camp.com"),
   title: "Apex Wrestling Camp Switzerland 2026 | September 6–11 | 30 Spots Only",
   description:
     "Train with world-class champions Isa Usupov & Idris Ibaev in the Swiss Alps. Apex Wrestling Camp Switzerland 2026 — September 6–11. Wrestling, BJJ, MMA, Grappling. Only 30 spots available. Register now.",
   alternates: {
-    canonical: "https://elitewrestlingcamp.ch",
+    canonical: "https://fighting-camp.com",
   },
   keywords: [
     "wrestling camp Switzerland 2026",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Apex Wrestling Camp Switzerland 2026 | September 6–11",
     description:
       "Train with world-class champions in the Swiss Alps. Only 30 spots available. Wrestling, BJJ, MMA, Grappling.",
-    url: "https://elitewrestlingcamp.ch",
+    url: "https://fighting-camp.com",
     siteName: "Apex Wrestling Camp Switzerland",
     type: "website",
     locale: "en_US",
