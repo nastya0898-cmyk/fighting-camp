@@ -53,8 +53,8 @@ const eventSchema = {
     {
       "@type": "Offer",
       name: "Camp Only",
-      price: "800",
-      priceCurrency: "EUR",
+      price: "599",
+      priceCurrency: "CHF",
       availability: "https://schema.org/LimitedAvailability",
       validFrom: "2026-01-01",
       url: "https://fighting-camp.com/#contact",
@@ -62,8 +62,8 @@ const eventSchema = {
     {
       "@type": "Offer",
       name: "Full Package",
-      price: "1200",
-      priceCurrency: "EUR",
+      price: "899",
+      priceCurrency: "CHF",
       availability: "https://schema.org/LimitedAvailability",
       validFrom: "2026-01-01",
       url: "https://fighting-camp.com/#contact",
@@ -145,6 +145,13 @@ const faqSchema = {
   ],
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Apex Wrestling Camp Switzerland",
+  url: "https://fighting-camp.com",
+};
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "SportsOrganization",
@@ -167,6 +174,10 @@ const organizationSchema = {
 export default function WrestlingSchema() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
