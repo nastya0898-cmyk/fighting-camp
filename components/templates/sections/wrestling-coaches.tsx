@@ -49,7 +49,8 @@ const coaches = [
     title: "Leading Coach",
     initials: "IU",
     photo: "/isa-usupov.jpg",
-    photoPosition: "center 15%",
+    photoPosition: "center 30%",
+    photoScale: 1.3,
     instagram: "https://www.instagram.com/spartansoldier_1/",
     credentials: [
       "Multiple-time Swiss Wrestling Champion",
@@ -140,15 +141,23 @@ export default function WrestlingCoaches() {
                     className="relative w-full overflow-hidden"
                     style={{ backgroundColor: "rgba(0,7,55,0.8)", aspectRatio: "1 / 1", maxHeight: "420px" }}
                   >
-                    <Image
-                      src={coach.photo}
-                      alt={`${coach.name} — Leading Coach at Apex Wrestling Camp Switzerland`}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      style={{ objectPosition: coach.photoPosition ?? "center top" }}
-                      priority={index === 0}
-                    />
+                    <div
+                      className="absolute inset-0 transition-transform duration-700 group-hover:scale-105"
+                      style={{
+                        transform: `scale(${coach.photoScale ?? 1})`,
+                        transformOrigin: "center top",
+                      }}
+                    >
+                      <Image
+                        src={coach.photo}
+                        alt={`${coach.name} — Leading Coach at Apex Wrestling Camp Switzerland`}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover"
+                        style={{ objectPosition: coach.photoPosition ?? "center top" }}
+                        priority={index === 0}
+                      />
+                    </div>
                     {/* Gradient fade to card */}
                     <div
                       className="absolute bottom-0 left-0 right-0 h-24"
