@@ -49,8 +49,8 @@ const coaches = [
     title: "Leading Coach",
     initials: "IU",
     photo: "/isa-usupov.jpg",
-    photoPosition: "center 30%",
-    photoScale: 1.3,
+    photoPosition: "center 75%",
+    photoScale: 1.2,
     instagram: "https://www.instagram.com/spartansoldier_1/",
     credentials: [
       "Multiple-time Swiss Wrestling Champion",
