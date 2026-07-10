@@ -49,7 +49,7 @@ const coaches = [
     title: "Leading Coach",
     initials: "IU",
     photo: "/isa-usupov.jpg",
-    photoPosition: "center 75%",
+    photoPosition: "center 52%",
     photoScale: 1.2,
     instagram: "https://www.instagram.com/spartansoldier_1/",
     credentials: [
