@@ -9,7 +9,9 @@ const plans = [
   {
     id: "camp",
     name: "Camp Only",
-    price: "€800",
+    oldPrice: "800",
+    price: "599",
+    specialPrice: true,
     featured: false,
     includes: [
       { item: "All Training Sessions", included: true },
@@ -25,7 +27,9 @@ const plans = [
   {
     id: "full",
     name: "Full Package",
-    price: "€1200",
+    oldPrice: "1200",
+    price: "899",
+    specialPrice: false,
     featured: true,
     includes: [
       { item: "All Training Sessions", included: true },
@@ -125,31 +129,76 @@ export default function WrestlingPricing() {
                 )}
 
                 <div className="p-8 lg:p-10 flex flex-col flex-1">
-                  {/* Plan name */}
-                  <div
-                    className="text-xs uppercase tracking-widest font-bold mb-2"
-                    style={{
-                      color: plan.featured ? "#FF8718" : "rgba(255,255,255,0.4)",
-                      fontFamily: "var(--font-heading)",
-                    }}
-                  >
-                    {plan.name}
+                  {/* Plan name + Special Price badge */}
+                  <div className="flex items-center gap-3 mb-2">
+                    <div
+                      className="text-xs uppercase tracking-widest font-bold"
+                      style={{
+                        color: plan.featured ? "#FF8718" : "rgba(255,255,255,0.4)",
+                        fontFamily: "var(--font-heading)",
+                      }}
+                    >
+                      {plan.name}
+                    </div>
+                    {plan.specialPrice && (
+                      <div
+                        className="px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest border"
+                        style={{
+                          borderColor: "#FF8718",
+                          color: "#FF8718",
+                          fontFamily: "var(--font-heading)",
+                        }}
+                      >
+                        Special Price
+                      </div>
+                    )}
                   </div>
 
-                  {/* Price */}
-                  <div className="mb-8">
-                    <span
-                      className="text-6xl font-bold text-white"
-                      style={{ fontFamily: "var(--font-heading)" }}
-                    >
-                      {plan.price}
-                    </span>
-                    <span
-                      className="text-white/40 ml-2 text-sm"
-                      style={{ fontFamily: "var(--font-body)" }}
-                    >
-                      / per athlete
-                    </span>
+                  {/* Price: strikethrough old → new */}
+                  <div className="mb-8 flex items-center gap-3 flex-wrap">
+                    <div className="relative">
+                      <span
+                        className="text-3xl font-bold"
+                        style={{ color: "rgba(255,255,255,0.3)", fontFamily: "var(--font-heading)" }}
+                      >
+                        {plan.oldPrice}
+                      </span>
+                      <span
+                        className="text-sm ml-1"
+                        style={{ color: "rgba(255,255,255,0.3)", fontFamily: "var(--font-body)" }}
+                      >
+                        CHF
+                      </span>
+                      {/* Diagonal strikethrough line */}
+                      <svg
+                        className="absolute inset-0 w-full h-full pointer-events-none"
+                        viewBox="0 0 100 100"
+                        preserveAspectRatio="none"
+                      >
+                        <line x1="0" y1="100" x2="100" y2="0" stroke="#FF8718" strokeWidth="4" />
+                      </svg>
+                    </div>
+                    <span style={{ color: "rgba(255,255,255,0.4)", fontSize: "1.25rem" }}>→</span>
+                    <div>
+                      <span
+                        className="text-6xl font-bold text-white"
+                        style={{ fontFamily: "var(--font-heading)" }}
+                      >
+                        {plan.price}
+                      </span>
+                      <span
+                        className="text-white/60 ml-1 text-lg font-bold"
+                        style={{ fontFamily: "var(--font-heading)" }}
+                      >
+                        CHF
+                      </span>
+                      <span
+                        className="block text-white/40 text-sm"
+                        style={{ fontFamily: "var(--font-body)" }}
+                      >
+                        / per athlete
+                      </span>
+                    </div>
                   </div>
 
                   {/* What's included */}
