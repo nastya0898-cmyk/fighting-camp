@@ -13,6 +13,7 @@ const coaches = [
     title: "Leading Coach",
     initials: "IM",
     photo: "/ismail-musukaev.jpg",
+    photoPosition: "center top",
     instagram: "https://www.instagram.com/ismail_musukaev__/",
     credentials: [
       "2023 World Champion — 65 kg Freestyle Wrestling",
@@ -30,6 +31,7 @@ const coaches = [
     title: "Leading Coach",
     initials: "II",
     photo: "/idris-ibaev.jpg",
+    photoPosition: "center top",
     instagram: "https://www.instagram.com/ibaev160?igsh=ZHIyb2sxd3g4b3g2",
     credentials: [
       "2021 World Champion — Greco-Roman Wrestling 72 kg",
@@ -47,6 +49,7 @@ const coaches = [
     title: "Leading Coach",
     initials: "IU",
     photo: "/isa-usupov.jpg",
+    photoPosition: "center 15%",
     instagram: "https://www.instagram.com/spartansoldier_1/",
     credentials: [
       "Multiple-time Swiss Wrestling Champion",
@@ -142,7 +145,8 @@ export default function WrestlingCoaches() {
                       alt={`${coach.name} — Leading Coach at Apex Wrestling Camp Switzerland`}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      style={{ objectPosition: coach.photoPosition ?? "center top" }}
                       priority={index === 0}
                     />
                     {/* Gradient fade to card */}
