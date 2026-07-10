@@ -63,6 +63,13 @@ export const metadata: Metadata = {
     description: "Train with world-class champions in the Swiss Alps. Only 30 spots.",
     images: ["/head-photo.jpg"],
   },
+  icons: {
+    icon: [
+      { url: "/logo-icon.png", type: "image/png" },
+    ],
+    apple: "/logo-icon.png",
+    shortcut: "/logo-icon.png",
+  },
   robots: {
     index: true,
     follow: true,
